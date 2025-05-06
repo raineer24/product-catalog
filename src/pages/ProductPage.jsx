@@ -9,6 +9,10 @@ const ProductPage = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
+  // In your ProductPage.jsx or API service file
+console.log(`Fetching product with ID: ${id}`); // Verify ID is correct
+console.log(`API URL: https://fakestoreapi.com/products/${id}`);
+
   useEffect(() => {
     const fetchProduct = async () => {
       try {

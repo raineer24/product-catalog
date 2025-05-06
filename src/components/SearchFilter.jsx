@@ -39,7 +39,7 @@ const SearchFilter = ({ onSearch, onCategoryFilter }) => {
         className="category-select"
       >
         {categories.map((category) => (
-          <option>
+          <option key={category} value={category}>
             {category.charAt(0).toUpperCase() + category.slice(1)}
           </option>
         ))}

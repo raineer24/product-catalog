@@ -64,7 +64,7 @@ const Home = () => {
       <div className="products-grid">
         {filteredProducts.length > 0 ? (
           filteredProducts.map((product) => (
-            <Link to={`/product/$product.id`} key={product.id}>
+            <Link to={`/product/${product.id}`} key={product.id}>
               <ProductCard product={product} />
             </Link>
           ))

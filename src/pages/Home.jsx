@@ -6,7 +6,7 @@ import LoadingSpinner from "../components/LoadingSpinner";
 
 const Home = () => {
   const [products, setProducts] = useState([]);
-  const [filteredProduts, setFilteredProducts] = useState([]);
+  const [filteredProducts, setFilteredProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
@@ -44,7 +44,7 @@ const Home = () => {
       setFilteredProducts(products);
     } else {
       const filtered = products.filter(
-        (prodict) => product.category.toLowerCase() === category.toLowerCase()
+        (product) => product.category.toLowerCase() === category.toLowerCase()
       );
       setFilteredProducts(filtered);
     }

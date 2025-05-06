@@ -1,20 +1,8 @@
-import React from 'react';
-import Card from './components/Card';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import ProductPage from './pages/ProductPage';
+import './App.css';
 
 function App() {
-
-
-  return (
-   <div>
-    <Card
-      title="Welcome"
-      content={<p>This is a reusable card component.</p>}
-      footer={<small>Updated just now</small>}
-      onClick={() => alert('Card clicked')}
-    />
-   </div>
-      
-  )
+  return ()
 }
-
-export default App
